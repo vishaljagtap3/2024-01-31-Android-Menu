@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/groupMain">
+    <item
+        android:id="@+id/menuInfo"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Info" />
+    <item
+        android:id="@+id/menuHelp"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+    </group>
+
+    <item android:id="@+id/menuSettings"
+        android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/menuPhoneSettings"
+                android:title="Phone Settings"
+                />
+            <item
+                android:id="@+id/menuProfileSettings"
+                android:title="Profile Settings"
+                />
+        </menu>
+    </item>
+</menu>
